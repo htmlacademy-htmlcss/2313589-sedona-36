@@ -32,7 +32,38 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "sans-serif";
   font-size: 18px;
   line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Pages */
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-family: "PT Sans", "sans-serif";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #333333;
+  background-color: #ffffff;
+  background-image: url("../images/hero-over-background.jpg");
+  bacground-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-list {
+  text-align: center;
 }

@@ -54,6 +54,7 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
+  /* Почему не могу убрать "точки" с помощью list-style: none; ?*/
 }
 
 .main-index {
@@ -88,9 +89,59 @@ body {
 
 /* Big */
 .advantages-big {
-  Font-family: "PT Sans", "sans-serif";
   font-size: 24px;
   line-height: 28px;
-  Text-transform: uppercase;
-
+  text-transform: uppercase;
 }
+
+/* services & hotel */
+.general-background {
+  color: #333333;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.invite,
+.interested {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services,
+.date-of-trip {
+  font-size: 22px;
+  line-height:26px;
+}
+
+.services-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height:28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height:21px;
+  font-weight: 400;
+}
+
+.hotel-search {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height:36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+/* footer */

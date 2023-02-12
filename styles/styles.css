@@ -173,3 +173,15 @@ body {
 }
 
 /* footer */
+.page-footer {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.footer-phone-number a {
+  color: #000000;
+  text-decoration: none;
+}

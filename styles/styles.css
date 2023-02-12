@@ -144,4 +144,31 @@ body {
   background-color: #756157;
 }
 
+/* mailing */
+.mailing {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+.appeal {
+  text-transform: none;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
 /* footer */

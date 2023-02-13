@@ -216,6 +216,24 @@ body {
   font-weight: 400;
 }
 
+.mailing-catalog {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center
+}
+
+.appeal-catalog {
+  text-transform: none;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
 /* footer */
 .page-footer {
   font-size: 40px;
@@ -261,8 +279,7 @@ body {
   background-color: #000000;
 }
 /* search result */
-.hotel-search-result,
-.hotel-search-figure {
+.hotel-search-result {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -324,4 +341,9 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.visually-hidden {
+  font-size: 22px;
+  line-height: 26px;
 }

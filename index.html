@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=dewice-width, initial-scale=1">
     <title>Личный проект "Седона"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
+
     <header class="page-header">
       <nav class="navigation">
         <img class="page-header-logo" alt="Логотип сайта Седона." src="images/navigation/logo-sedona.svg" width="140" height="70">
@@ -50,7 +51,9 @@
       <section class="hero">
         <h1 class="visually-hidden">Седона - город в Аризоне</h1>
         <img class="hero-welcom" src="images/welcome.svg" width="458" height="352" alt="Welcom to the gorgeous Sedona, beacause the Grand Canyon sucks!">
+        <!-- Заменяет фон Hero в HTML на фон [bi] в CSS
         <img class="hero-over-background" src="images/hero-over-background.jpg" width="1200" height="485" alt="Горы в дымке">
+        -->
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Приемущества города Седона</h2>
@@ -62,15 +65,15 @@
             <p class="advantages-little">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages" src="images/advantages/advantages-1.jpg" width="800" height="385" alt="Дома с флагами на фоне гор">
           </li>
-          <li class="advantages-item-text">
+          <li class="advantages-item-text advantages-white">
             <p class="advantages-big">Небольшая площадь</p>
             <p class="advantages-little">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item-text">
+          <li class="advantages-item-text advantages-grey">
             <p class="advantages-big">Красивая дорога</p>
             <p class="advantages-little">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item-text">
+          <li class="advantages-item-text advantages-white">
             <p class="advantages-big">Мало туристов</p>
             <p class="advantages-little">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
@@ -81,6 +84,7 @@
           </li>
         </ul>
       </section>
+    <div class="general-background">
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <p class="invite">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -100,12 +104,15 @@
           </li>
         </ul>
       </section>
+    </div>
+    <div class="general-background">
       <section class="hotel">
         <h2 class="visually-hidden">Гостиницы в Седоне</h2>
         <p class="interested">Заинтересовались?</p>
         <p class="date-of-trip">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
+    </div>
       <section class="mailing">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p class="appeal">Только полезная информация и никакого спама, честное бойскаутское!</p>

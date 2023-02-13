@@ -185,3 +185,27 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+/* catalog.html */
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78;
+  font-weight: 700;
+  color: #ffffff;
+  background-colo: #000000;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21;
+  color: #ffffff;
+  background-colo: #000000;
+}
+
+.catalog-filter-title {
+  font-size: 16px;
+  line-height: 21;
+  /*font-weight: 400;*/
+  color: #ffffff;
+  background-colo: #000000;
+}

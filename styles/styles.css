@@ -161,6 +161,7 @@ body {
 /* Advantages */
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -180,6 +181,8 @@ body {
 
 .advantages-images {
   width: 800px;
+  vertical-align: middle;
+  align-self: baseline;
 }
 
 .advantages-white {

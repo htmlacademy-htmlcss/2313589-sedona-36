@@ -31,7 +31,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "sans-serif";
   font-size: 18px;
   line-height: 21px;
@@ -100,6 +108,23 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "PT Sans", "sans-serif";
   font-size: 20px;
@@ -111,16 +136,33 @@ body {
   /* Почему не могу убрать "точки" с помощью list-style: none; ?*/
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #333333;
   background-color: #ffffff;
   background-image: url("../images/hero-over-background.jpg");
-  bacground-size: 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-welcom {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Advantages */
 .advantages-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   text-align: center;
   list-style: none;
 }

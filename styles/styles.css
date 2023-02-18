@@ -173,6 +173,15 @@ body {
   color: #ffffff;
 }
 
+.advantages-item-img p,
+.advantages-item-tex p {
+  width: 400px;
+}
+
+.advantages-images {
+  width: 800px;
+}
+
 .advantages-white {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;

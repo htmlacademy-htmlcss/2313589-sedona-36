@@ -160,13 +160,30 @@ body {
 
 /* Advantages */
 .welcom-reasons {
+  text-align: center;
+  list-style: none;
+}
+
+.welcom {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  background-color: #ffffff;
   color: #000000;
-  text-align: center;
-  list-style: none;
+  width: 620px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.reasons {
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #333333;
+  width: 651px;
+  height: 26px;
+  margin: 0 auto;
 }
 
 

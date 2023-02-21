@@ -160,6 +160,7 @@ body {
 
 /* Advantages */
 .welcom-reasons {
+  width: 1200px;
   text-align: center;
   list-style: none;
 }
@@ -186,7 +187,6 @@ body {
   margin: 0 auto;
 }
 
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -197,21 +197,24 @@ body {
 }
 
 .advantages-item-img {
-  text-align: center;
+  display: flex;
   background-color: #82b3d3;
   color: #ffffff;
 }
 
 .advantages-item-img p,
-.advantages-item-tex p {
+.advantages-item-text p {
   width: 400px;
   justify-content: space-between;
+}
+
+.advantages-houses {
+  width: 400px;
 }
 
 .advantages-images {
   width: 800px;
   vertical-align: middle; /* Прижимает img к низу блока?!*/
-  justify-content: space-between;
 }
 
 .advantages-white {
@@ -228,6 +231,7 @@ body {
 .advantages-big {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 

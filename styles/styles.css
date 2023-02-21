@@ -163,6 +163,8 @@ body {
   width: 1200px;
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .welcom {
@@ -202,6 +204,10 @@ body {
   color: #ffffff;
 }
 
+.revers-images {
+  flex-direction: row-reverse;
+}
+
 .advantages-item-img p,
 .advantages-item-text p {
   width: 400px;
@@ -237,13 +243,42 @@ body {
 
 /* services & hotel */
 .general-background {
+  width: 1200px;
   color: #333333;
   background-color: #ffffff;
   text-align: center;
 }
 
+.services-advantages {
+  width: 1200px;
+}
+
 .services-list {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-align: center;
+  background-color: #83B3D3;
+}
+
+.invite {
+  margin: 0;
+  padding: 0;
+  width: 505px;
+  height: 72px;
+/*text-align: center; не работает*/
+  padding-left: 347.5px;
+}
+
+.services {
+  margin: 0;
+  padding: 0;
+  width: 490px;
+  text-align: center;
+  padding: 355px;
 }
 
 .invite,
@@ -253,6 +288,14 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+}
+
+.services-item {
+  width: 400px;
+}
+
+.white-fone {
+  background-color: #ffffff;
 }
 
 .services,

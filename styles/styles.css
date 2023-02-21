@@ -298,10 +298,20 @@ body {
   background-color: #ffffff;
 }
 
+.interested {
+  width: 297px;
+  padding: 451.5px;
+}
+
 .services,
 .date-of-trip {
   font-size: 22px;
   line-height:26px;
+}
+
+.date-of-trip {
+  width: 592px;
+  padding: 304px;
 }
 
 .services-title {
@@ -318,7 +328,14 @@ body {
   font-weight: 400;
 }
 
+.hotel {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-search {
+  width: 276px;
   text-transform: uppercase;
   font-size: 20px;
   line-height:36px;

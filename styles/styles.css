@@ -428,13 +428,15 @@ body {
 .footer-phone-number {
   width: 331px;
   margin: 0 auto;
+  /* не могу отцентровать, после замены соц сетей на иконки вернусь к этому вопросу */
 }
 
 .footer-social-item {
   /*display: flex;
   flex-wrap: wrap;*/
   list-style: none;
-  width: 142px;
+  max-width: 142px;
+  margin-right: 236px;
   /*margin: 0 auto;
   padding: 0;*/
 }

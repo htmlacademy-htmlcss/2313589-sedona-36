@@ -373,7 +373,8 @@ body {
   padding: 0;
 }
 
-.appeal {
+.appeal,
+.appeal-catalog {
   width: 475px;
   padding-left: 365.5px;
   text-transform: none;
@@ -383,10 +384,10 @@ body {
 }
 
 .mailing-catalog {
-  text-transform: uppercase;
+  /*text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 700;*/
   color: #000000;
   background-color: #ffffff;
   text-align: center

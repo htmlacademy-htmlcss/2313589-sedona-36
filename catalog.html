@@ -48,7 +48,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
       <header class="header-inner">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -62,6 +63,7 @@
           </li>
         </ul>
       </header>
+
       <section class="hotel-catalog">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -111,15 +113,21 @@
               </li>
             </ul>
           </fieldset>
+          <div class="button-catalog">
           <button class="button botton-catalog-blue" type="submit">Применить</button>
           <button class="button botton-catalog-passive" type="submit">Сбросить</button>
+          </div>
         </form>
       </section>
 
+      <div class="search-results"> <!-- нужно ли? -->
       <section class="hotel-search-results">
+        <div class="sorting">
         <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
-        <p class="hotel-search-result">Найдено гостиниц:</p>
-        <p class="hotel-search-figure">38</p>
+        <p class="hotel-search-result">Найдено гостиниц: 38</p>
+        <!-- Удалить?
+          <p class="hotel-search-figure">38</p>
+        -->
         <select class="drop-down-list" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -134,6 +142,7 @@
         <a href="" class="button list-icons">
           <span class="visually-hidden">Значки списком</span>
         </a>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -205,9 +214,10 @@
           </li>
         </ul>
       </section>
-      <section class="mailing">
+      </div>
+      <section class="mailing-catalog">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p class="appeal">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="appeal-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="mailing-form-adress">
             <label class="form-adress">Email</label>
@@ -218,8 +228,10 @@
           </button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
+      <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -251,6 +263,7 @@
           alt="Логотип компании-разработчика сайта, HTML Academy.">
         </a>
       </section>
+      </div>
     </footer>
   </body>
 

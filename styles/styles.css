@@ -191,6 +191,7 @@ body {
 }
 
 /* logo */
+
 .hero-welcom {
   display: block;
   margin: 0 auto;
@@ -331,43 +332,45 @@ body {
 } /* Не работает центровка на эти три элемента?!!*/
 
 /* services & hotel */
+
 .general-background {
+  display: flex;
   width: 1200px;
   color: #333333;
   background-color: #ffffff;
-  text-align: center;
 }
 
 .services-advantages {
   width: 1200px;
+  text-align: center;
 }
 
 .services-list {
   width: 1200px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
   background-color: #83B3D3;
+  min-height: 385px;
 }
 
 .invite {
-  margin: 0;
+  width:505px;
+  min-height: 72px;
+  margin: 0 auto;
   padding: 0;
-  width: 505px;
-  height: 72px;
-/*text-align: center; не работает*/
-  padding-left: 347.5px;
+  margin-top: 64px;
+  margin-bottom: 20px;
 }
 
 .services {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 490px;
-  text-align: center;
-  padding-left: 355px;
+  min-height: 26px;
+  margin-bottom: 64px;
 }
 
 .invite,
@@ -380,7 +383,9 @@ body {
 }
 
 .services-item {
-  width: 400px;
+  min-width: 230px;
+  min-height: 223px;
+  margin: 81px 85px;
 }
 
 .white-fone {
@@ -388,8 +393,10 @@ body {
 }
 
 .interested {
+  margin: 0;
+  padding: 0;
   width: 297px;
-  padding-left: 451.5px;
+  min-height: 36px;
 }
 
 .services,
@@ -404,6 +411,9 @@ body {
 }
 
 .services-title {
+  min-width: 230px;
+  min-height: 28px;
+  margin: 30px 0;
   text-transform: uppercase;
   font-size: 24px;
   line-height:28px;
@@ -412,6 +422,8 @@ body {
 }
 
 .services-description {
+  min-width: 230px;
+  min-height: 63px;
   font-size: 18px;
   line-height:21px;
   font-weight: 400;

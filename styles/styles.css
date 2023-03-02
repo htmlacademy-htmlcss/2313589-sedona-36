@@ -307,6 +307,7 @@ body {
 .advantages-grey {
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000 ;
@@ -607,7 +608,6 @@ body {
 /* catalog.html */
 
 .background-image-catalog {
-  display: flex;
   background-image: url(../images/header-inner.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -628,7 +628,6 @@ body {
 }
 
 .hotel-catalog {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
   padding: o;

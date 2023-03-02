@@ -174,7 +174,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 51px;
 }
 
 .main-index {
@@ -183,6 +182,7 @@ body {
 }
 
 .hero {
+  padding-top: 51px;
   background-image: url("../images/hero-over-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;

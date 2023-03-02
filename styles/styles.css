@@ -678,9 +678,13 @@ body {
 /* search result */
 
 .hotel-search-result {
+  margin: 0;
+  padding: 0;
   width: 338px;
   height: 36px;
   margin-left: 70px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -692,7 +696,13 @@ body {
   display: flex;
   width: 1060px;
   height: 49px;
+  margin: 50px 70px 60px;
   /*margin: 50px 70px 1136px 70px;*/
+}
+
+.sorting .button {
+  width: 48px;
+  height: 48px;
 }
 
 .drop-down-list {
@@ -706,6 +716,12 @@ body {
   background-color: #ffffff;
 }
 
+.hotel-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -714,7 +730,7 @@ body {
   background-color: #ffffff;
   }
 
-  .hotel-card-link {
+.hotel-card-link {
     text-decoration: none;
   }
 

@@ -541,11 +541,15 @@ body {
 }
 
 /* footer */
+
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  /*padding: 40px 70px 30px 70px;*/
+  padding: 0;
+  margin-top: 45px;
+  /*padding: 40px 70px 30px;*/
 }
 
 .page-footer {
@@ -563,27 +567,38 @@ body {
 
 .footer-phone-number {
   width: 331px;
+  min-height: 40px;
   margin: 0 auto;
-  /* не могу отцентровать, после замены соц сетей на иконки вернусь к этому вопросу */
+}
+
+.footer-social {
+  margin-right: auto;
+  max-width: 142px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer-social-item {
-  /*display: flex;
-  flex-wrap: wrap;*/
+  width: 48px;
+  height: 40px;
   list-style: none;
-  max-width: 142px;
-  margin-right: 236px;
-  /*margin: 0 auto;
-  padding: 0;*/
-}
+  margin-right: 0;
+}/* какой указать размер, по макетц идут не целые числа!? */
 
 .footer-logo-htmlacademy {
   width: 115px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 70px
 }
 
 /* catalog.html */
+
 .inner-header-title {
   width: 495px;
   height: 78px;

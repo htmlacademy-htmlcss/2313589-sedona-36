@@ -180,8 +180,11 @@ body {
 .main-index {
   color: #333333;
   background-color: #ffffff;
+}
+
+.hero {
   background-image: url("../images/hero-over-background.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -456,6 +459,8 @@ body {
 
 /* mailing */
 .mailing {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   list-style: none;
   margin: 0;

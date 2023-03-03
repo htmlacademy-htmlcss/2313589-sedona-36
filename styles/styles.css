@@ -47,6 +47,17 @@ body {
   color: #333333;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* button index.html */
 .button {
   text-transform: uppercase;
@@ -110,14 +121,6 @@ body {
   flex-wrap: wrap;*/
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 /* Pages */
 
 .page-header {
@@ -132,23 +135,22 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 600px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
+  max-width: 360px;
   margin-left: auto;
 }
 
-.page-header-logo {
-  width: 140px;
-  height: 71px;
-  margin-left: 70px;
-}
-
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-family: "PT Sans", "sans-serif";
   font-size: 20px;
   line-height: 24px;
@@ -156,7 +158,18 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
-  /* Почему не могу убрать "точки" с помощью list-style: none; ?*/
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  padding: 0;
+}
+
+.page-header-logo {
+  width: 140px;
+  height: 71px;
+  margin-left: 70px;
 }
 
 .main-container {
@@ -166,8 +179,12 @@ body {
 .main-index {
   color: #333333;
   background-color: #ffffff;
+}
+
+.hero {
+  padding-top: 51px;
   background-image: url("../images/hero-over-background.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -176,18 +193,28 @@ body {
   margin: 0 auto;
 }
 
+/* logo */
+
 .hero-welcom {
   display: block;
   margin: 0 auto;
+  padding-bottom: 83px;
 }
 
 /* Advantages */
+
+.advantages .welcom-reasons {
+  margin-bottom: 21px;
+}
+
 .welcom-reasons {
   width: 1200px;
+  min-height: 261px;
   text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 21px;
 }
 
 .welcom {
@@ -200,6 +227,7 @@ body {
   width: 620px;
   height: 72px;
   margin: 0 auto;
+  padding: 69px 290px 25px;
 }
 
 .reasons {
@@ -210,14 +238,17 @@ body {
   width: 651px;
   height: 26px;
   margin: 0 auto;
+  padding-left: 274px;
+  padding-right: 274px;
+  padding-bottom: 69px;
 }
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
   list-style: none;
 }
 
@@ -232,8 +263,13 @@ body {
 
 .advantages-item-img {
   display: flex;
+  min-height: 385px;
   background-color: #82b3d3;
   color: #ffffff;
+}
+
+.advantages-item-text {
+  min-height: 385px;
 }
 
 .catalog-filter-group {
@@ -260,61 +296,92 @@ body {
 }
 
 .advantages-white {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
 .advantages-grey {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000 ;
 }
 
 /* Big */
 .advantages-big {
+  margin: 0;
+  padding: 0;
+  min-width: 175px;
+  min-height: 56px;
+  margin-bottom: 62px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  align-items: center;
 }
 
+.advantages-little {
+  margin: 0;
+  padding: 0;
+  min-width: 230px;
+  min-height: 42px;
+}
+
+.advantages-item-img {
+  align-items: center;
+}
+
+.advantages-item-text {
+  align-items: center;
+} /* Не работает центровка на эти три элемента?!!*/
+
 /* services & hotel */
+
 .general-background {
+  display: flex;
   width: 1200px;
   color: #333333;
   background-color: #ffffff;
-  text-align: center;
 }
 
 .services-advantages {
   width: 1200px;
+  text-align: center;
 }
 
 .services-list {
   width: 1200px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
-  background-color: #83B3D3;
-}
+  background-color: rgba(131, 179, 211, 0.12);
+  min-height: 385px;
+} /*как сделать 12% от цвета?*/
 
 .invite {
-  margin: 0;
+  width:505px;
+  min-height: 72px;
+  margin: 0 auto;
   padding: 0;
-  width: 505px;
-  height: 72px;
-/*text-align: center; не работает*/
-  padding-left: 347.5px;
+  margin-top: 64px;
+  margin-bottom: 20px;
 }
 
 .services {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 490px;
-  text-align: center;
-  padding-left: 355px;
+  min-height: 26px;
+  margin-bottom: 64px;
 }
 
 .invite,
@@ -327,7 +394,10 @@ body {
 }
 
 .services-item {
-  width: 400px;
+  box-sizing: border-box;
+  min-width: 400px;
+  min-height: 385px;
+  padding: 81px 85px;
 }
 
 .white-fone {
@@ -335,8 +405,12 @@ body {
 }
 
 .interested {
+  margin: 0 auto;
+  padding: 0;
   width: 297px;
-  padding-left: 451.5px;
+  min-height: 36px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .services,
@@ -346,11 +420,18 @@ body {
 }
 
 .date-of-trip {
+  margin: 0 auto;
+  padding: 0;
   width: 592px;
-  padding-left: 304px;
+  min-height: 52px;
+  text-align: center;
+  margin-bottom: 62px;
 }
 
 .services-title {
+  min-width: 230px;
+  min-height: 28px;
+  margin: 30px 0;
   text-transform: uppercase;
   font-size: 24px;
   line-height:28px;
@@ -359,6 +440,8 @@ body {
 }
 
 .services-description {
+  min-width: 230px;
+  min-height: 63px;
   font-size: 18px;
   line-height:21px;
   font-weight: 400;
@@ -366,12 +449,13 @@ body {
 
 .hotel {
   width: 1200px;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  padding: 96px;
 }
 
 .hotel-search {
-  width: 276px;
+  padding: 8px 50px;
+  width: 376px;
   text-transform: uppercase;
   font-size: 20px;
   line-height:36px;
@@ -382,7 +466,10 @@ body {
 }
 
 /* mailing */
+
 .mailing {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   list-style: none;
   margin: 0;
@@ -392,9 +479,17 @@ body {
   text-align: center;
 }
 
+.mailing-background {
+  background-image: url(../images/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+
 .mailing-title {
+  margin: 0;
   width: 404px;
-  padding-left: 398px;
+  min-height: 37px;
+  padding: 96px 398px 20px;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
@@ -411,12 +506,23 @@ body {
 
 .appeal,
 .appeal-catalog {
+  margin: 0 auto;
   width: 475px;
-  padding-left: 365.5px;
+  min-height: 53px;
+  padding-bottom: 54px;
   text-transform: none;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.mailing-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 684px;
+  min-height: 52px;
 }
 
 .mailing-catalog {
@@ -442,11 +548,15 @@ body {
 }
 
 /* footer */
+
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  /*padding: 40px 70px 30px 70px;*/
+  padding: 0;
+  margin-top: 45px;
+  /*padding: 40px 70px 30px;*/
 }
 
 .page-footer {
@@ -464,40 +574,60 @@ body {
 
 .footer-phone-number {
   width: 331px;
+  min-height: 40px;
   margin: 0 auto;
-  /* не могу отцентровать, после замены соц сетей на иконки вернусь к этому вопросу */
+}
+
+.footer-social {
+  margin-right: auto;
+  max-width: 142px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer-social-item {
-  /*display: flex;
-  flex-wrap: wrap;*/
+  width: 48px;
+  height: 40px;
   list-style: none;
-  max-width: 142px;
-  margin-right: 236px;
-  /*margin: 0 auto;
-  padding: 0;*/
-}
+  margin-right: 0;
+}/* какой указать размер, по макету идут не целые числа!? */
 
 .footer-logo-htmlacademy {
   width: 115px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 70px
 }
 
 /* catalog.html */
+
+.background-image-catalog {
+  background-color: #000000;
+  background-image: url(../images/header-inner.jpg);*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .inner-header-title {
+  margin: 0;
+  padding: 0;
   width: 495px;
-  height: 78px;
-  margin-left: 70px;
+  min-height: 78px;
+  padding-top: 75px;
+  padding-left: 70px;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .hotel-catalog {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
   padding: o;
@@ -518,13 +648,15 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 41px; /* 70px отступ дб, сформирую отступ после добавления иконок */
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .catalog-filter-title {
@@ -532,20 +664,27 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .control-input {
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
-  background-color: #000000;
 }
+
+.control {
+  color: #ffffff;
+}
+
 /* search result */
+
 .hotel-search-result {
+  margin: 0;
+  padding: 0;
   width: 338px;
   height: 36px;
   margin-left: 70px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -557,7 +696,13 @@ body {
   display: flex;
   width: 1060px;
   height: 49px;
+  margin: 50px 70px 60px;
   /*margin: 50px 70px 1136px 70px;*/
+}
+
+.sorting .button {
+  width: 48px;
+  height: 48px;
 }
 
 .drop-down-list {
@@ -571,6 +716,12 @@ body {
   background-color: #ffffff;
 }
 
+.hotel-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -579,7 +730,7 @@ body {
   background-color: #ffffff;
   }
 
-  .hotel-card-link {
+.hotel-card-link {
     text-decoration: none;
   }
 
@@ -592,11 +743,33 @@ body {
 }
 
 /* pagination */
+
+.pagination-container {
+  display: flex;
+}
+
 .pagination {
-  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 11px;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
   text-decoration: none;
 }
 

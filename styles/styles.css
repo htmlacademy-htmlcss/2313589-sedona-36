@@ -725,7 +725,7 @@ body {
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
   list-style-type: none;
-  margin: 40px 70px   80px;
+  margin: 40px 70px 80px;
   padding: 0;
 }
 
@@ -738,7 +738,7 @@ body {
   }
 
 .hotel-card-link {
-    text-decoration: none;
+  text-decoration: none;
   }
 
 .hotel-card-rating {
@@ -753,6 +753,7 @@ body {
 
 .pagination-container {
   display: flex;
+  margin-left: 70px;
 }
 
 .pagination {

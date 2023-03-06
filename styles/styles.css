@@ -681,12 +681,15 @@ body {
 
 /* search result */
 
+.search-results {
+  min-width: 1060px;
+}
+
 .hotel-search-result {
   margin: 0;
   padding: 0;
   width: 338px;
   height: 36px;
-  margin-left: 70px;
   padding-top: 6px;
   padding-bottom: 6px;
   font-size: 30px;
@@ -698,10 +701,16 @@ body {
 
 .sorting {
   display: flex;
-  width: 1060px;
+  min-width: 1060px;
   height: 49px;
-  margin: 50px 70px 60px;
+  margin-top: ;
+  margin: 50px 70px 40px;
   /*margin: 50px 70px 1136px 70px;*/
+}
+
+.button-icons {
+  width: 160px;
+  margin-left: 70px;
 }
 
 .sorting .button {

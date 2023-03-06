@@ -144,8 +144,12 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 360px;
   margin-left: auto;
+  margin: 0;
 }
 
 .navigation-link {
@@ -717,8 +721,11 @@ body {
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
-  margin: 0;
+  margin: 40px 70px   80px;
   padding: 0;
 }
 

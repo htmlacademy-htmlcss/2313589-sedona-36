@@ -484,13 +484,12 @@ body {
 .services-list {
   width: 1200px;
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: rgba(131, 179, 211, 0.12);
   min-height: 385px;
-} /*как сделать 12% от цвета?*/
+}
 
 .invite {
   width:505px;
@@ -521,12 +520,33 @@ body {
 .services-item {
   box-sizing: border-box;
   min-width: 400px;
-  min-height: 385px;
-  padding: 81px 85px;
+  height: 385px;
+  padding: 183px 0 100px;
 }
 
 .white-fone {
   background-color: #ffffff;
+}
+
+.advices-item-house {
+  background-image: url("../images/services/house.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  background-size: 75px 72px;
+}
+
+.advices-item-burger {
+  background-image: url("../images/services/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  background-size: 75px 72px;
+}
+
+.advices-item-souvenir {
+  background-image: url("../images/services/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  background-size: 75px 72px;
 }
 
 .interested {
@@ -556,7 +576,6 @@ body {
 .services-title {
   min-width: 230px;
   min-height: 28px;
-  margin: 30px 0;
   text-transform: uppercase;
   font-size: 24px;
   line-height:28px;

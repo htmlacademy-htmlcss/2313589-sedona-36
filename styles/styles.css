@@ -187,6 +187,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   font-family: "PT Sans", "sans-serif";
   font-size: 20px;
@@ -229,29 +230,38 @@ body {
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link{
-  background-image: url("../images/check-bocks-icons/search.svg");
+  background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link{
-  background-image: url("../images/check-bocks-icons/heart.svg");
+  background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 20px;
 }
 
-/* Задать стиль для цифры 12 над сердцем .navigation-user .navigation-item:nth-child(4) .navigation-link{
-  background-image: url("../images/check-bocks-icons/number-green/12-in-green.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.text-link {
   position: absolute;
-  top: 0;
+  width: 11px;
+  height: 10px;
+  top: calc(50% - 10px/2 - 15px);
   right: 0;
   bottom: 0;
-  left: -100px;
-  margin: auto;
-}*/
+  left: calc(50% - 11px/2 + 4px);
+  /*margin: auto;*/
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  padding: 5px 5px 4px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 50%;
+}
 
 
 .page-header-logo {

@@ -59,17 +59,57 @@ body {
 }
 
 /* button index.html */
+
+/* Кнопка "Подписаться" в блоке рассылки */
 .button {
+  display: inline-block;
+  font-family: "PT Sans", "sans-serif";
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+}
+
+/* Кнопка "Хочу сюда" в меню навигации */
+.navigation-link.button.button-small {
+  color: #ffffff;
+  background-color: #756157;
+  min-width: 92px;
+  min-height: 20px;
+  padding: 8px 34px;
+  border-radius: 4px;
+}
+
+.button-mail {
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
 }
 
 /* botton catalog.html */
+
+.button-catalog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-left: auto;
+  width: 191px;
+  height: 104px;
+  margin-right: 70px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
 .botton-catalog-blue {
   text-transform: uppercase;
   text-align: center;
@@ -78,6 +118,8 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #82b3d3;
+
+  padding: 8px 50px;
 }
 
 .botton-catalog-passive {
@@ -87,7 +129,8 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 .button-blue-small {
@@ -110,15 +153,6 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
-}
-
-.button-catalog {
-  width: 191px;
-  height: 104px;
-  margin-left: 939px;
-  text-align: center;
-  /*display: flex;
-  flex-wrap: wrap;*/
 }
 
 /* Pages */
@@ -146,15 +180,14 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   max-width: 360px;
-  margin-left: auto;
+  margin-left: 0;
   margin: 0;
 }
 
 .navigation-link {
   display: block;
-  padding: 20px 16px;
   font-family: "PT Sans", "sans-serif";
   font-size: 20px;
   line-height: 24px;
@@ -162,6 +195,7 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 .navigation-user .navigation-link {
@@ -459,7 +493,8 @@ body {
 
 .hotel-search {
   padding: 8px 50px;
-  width: 376px;
+  min-width: 376px;
+  min-height: 36px;
   text-transform: uppercase;
   font-size: 20px;
   line-height:36px;
@@ -467,6 +502,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 /* mailing */
@@ -524,16 +560,13 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 104px;
   overflow: hidden;
   width: 684px;
   min-height: 52px;
 }
 
 .mailing-catalog {
-  /*text-transform: uppercase;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;*/
   color: #000000;
   background-color: #ffffff;
   text-align: center
@@ -555,12 +588,13 @@ body {
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   width: 1200px;
+  min-height: 120px;
   margin: 0 auto;
   padding: 0;
-  margin-top: 45px;
-  /*padding: 40px 70px 30px;*/
 }
 
 .page-footer {
@@ -577,14 +611,17 @@ body {
 }
 
 .footer-phone-number {
-  width: 331px;
+  min-width: 331px;
   min-height: 40px;
   margin: 0 auto;
 }
 
 .footer-social {
   margin-right: auto;
-  max-width: 142px;
+  margin-left: 70px;
+  min-width: 142px;
+  min-height: 40px;
+
 }
 
 .footer-social-list {
@@ -593,13 +630,15 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 142px;
+  min-height: 40px;
 }
 
 .footer-social-item {
   width: 48px;
   height: 40px;
   list-style: none;
-  margin-right: 0;
+
 }/* какой указать размер, по макету идут не целые числа!? */
 
 .footer-logo-htmlacademy {

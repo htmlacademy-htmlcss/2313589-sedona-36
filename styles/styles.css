@@ -204,6 +204,41 @@ body {
   padding: 0;
 }
 
+.navigation-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/check-bocks-icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  background-image: url("../images/check-bocks-icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+/* Задать стиль для цифры 12 над сердцем .navigation-user .navigation-item:nth-child(4) .navigation-link{
+  background-image: url("../images/check-bocks-icons/number-green/12-in-green.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100px;
+  margin: auto;
+}*/
+
+
 .page-header-logo {
   width: 140px;
   height: 71px;

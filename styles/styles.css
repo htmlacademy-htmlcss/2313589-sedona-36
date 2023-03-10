@@ -712,6 +712,22 @@ body {
   text-align: center;
 }
 
+.footer-social-link {
+  color: #83B3D3;
+}
+
+.footer-social-link:hover {
+  color: #68A2CA;
+}
+
+.footer-social-link:focus {
+  color: #68A2CA;
+}
+
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
 .footer-phone-number a {
   color: #000000;
   text-decoration: none;
@@ -745,8 +761,7 @@ body {
   width: 48px;
   height: 40px;
   list-style: none;
-
-}/* какой указать размер, по макету идут не целые числа!? */
+}
 
 .footer-logo-htmlacademy {
   width: 115px;
@@ -814,6 +829,14 @@ body {
   color: #FFFFFF;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-home-link {
   width: 12px;
   height: 12px;
@@ -837,7 +860,7 @@ body {
   width: 7px;
   height: 20px;
   right: -16px;
-  top: -2px;
+  top: -3px;
 }
 
 .breadcrumbs-item:last-child::after {
@@ -899,12 +922,20 @@ body {
   padding: 14px 12px;
   width: 48px;
   height: 48px;
-  border: 2px solid #000000;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
-.large-icons, .list-icons {
-  border: 2px solid #E5E5E5;
+.icons-list:hover {
+  border: 2px solid #000000;
+}
+
+.icons-list:focus {
+  border: 2px solid #68A2CA;
+}
+
+.icons-list:active {
+  border: 2px solid #000000;
 }
 
 .sorting .button {
@@ -1054,6 +1085,26 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.pagination-link:hover:not(.pagination-current) {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+
+.pagination-link:focus:not(.pagination-current) {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+
+.pagination-link:active:not(.pagination-current) {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {

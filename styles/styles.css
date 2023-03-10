@@ -1006,6 +1006,23 @@ body {
   padding-right: 40px;
 }
 
+.drop-down-list:hover {
+  border: 2px solid #68A2CA;
+}
+
+.drop-down-list:focus {
+  border: 2px solid #68A2CA;
+}
+
+.drop-down-list:active {
+  border: 2px solid #3F5E72;
+}
+
+.drop-down-list:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);

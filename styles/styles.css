@@ -882,11 +882,18 @@ body {
   width: 292px;
   height: 49px;
   margin-left: 200px;
-  padding: 0px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-image: url("../images/hotel-catalog/check-bocks/jackdaw-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 40px;
 }
 
 .hotel-list {

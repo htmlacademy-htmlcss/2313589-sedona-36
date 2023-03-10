@@ -119,8 +119,25 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #82b3d3;
-
   padding: 8px 50px;
+}
+
+.botton-catalog-blue:hover {
+  background-color: #68A2CA;
+}
+
+.botton-catalog-blue:focus {
+  background-color: #68A2CA;
+}
+
+.botton-catalog-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.botton-catalog-blue:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .botton-catalog-passive {
@@ -134,6 +151,23 @@ body {
   border-radius: 4px;
 }
 
+.botton-catalog-passive:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.botton-catalog-passive:focus {
+  color: #ffffff;
+}
+
+.botton-catalog-passive:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.botton-catalog-passive:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .button-blue-small {
   text-transform: uppercase;
   text-align: center;
@@ -145,6 +179,24 @@ body {
   text-decoration: none;
 }
 
+.button-blue-small:hover {
+  background-color: #68A2CA;
+}
+
+.button-blue-small:focus {
+  background-color: #68A2CA;
+}
+
+.button-blue-small:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-blue-small:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .button-brown-small {
   text-transform: uppercase;
   text-align: center;
@@ -154,6 +206,24 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+}
+
+.button-brown-small:hover {
+  background-color: #615048;
+}
+
+.button-brown-small:focus {
+  background-color: #615048;
+}
+
+.button-brown-small:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button-brown-small:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Pages */
@@ -1074,6 +1144,24 @@ body {
 
 .blue-small-current {
   background-color: #7DB54F;
+}
+
+.blue-small-current:hover {
+  background-color: #6C9E42;
+}
+
+.blue-small-current:focus {
+  background-color: #6C9E42;
+}
+
+.blue-small-current:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+}
+
+.blue-small-current:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-card-rating {

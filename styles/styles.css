@@ -959,12 +959,29 @@ body {
   background-color: #ffffff;
   margin: 0;
   margin-top: 16px;
-  }
+}
+
+.hotel-card-button {
+  display: block;
+  border-radius: 4px;
+}
 
 .hotel-card-link {
   grid-column: 1 / -1;
   text-decoration: none;
-  }
+}
+
+.button-brown-small {
+  padding: 8px 18px;
+}
+
+.button-blue-small {
+  padding: 8px 12px;
+}
+
+.blue-small-current {
+  background-color: #7DB54F;
+}
 
 .hotel-card-rating {
   text-transform: uppercase;
@@ -973,6 +990,15 @@ body {
   color: #333333;
   background-color: #f2f2f2;
   padding: 9px 22px 8px 23px;
+  border-radius: 4px;
+}
+
+.hotel-card-stars {
+  width: 140px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
 }
 
 /* pagination */

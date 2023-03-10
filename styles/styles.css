@@ -861,12 +861,16 @@ body {
 }
 
 .small-icons, .large-icons, .list-icons {
-align-items: center;
-padding: 14px 12px;
-width: 48px;
-height: 48px;
-border: 2px solid #000000;
-border-radius: 4px;
+  align-items: center;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.large-icons, .list-icons {
+  border: 2px solid #E5E5E5;
 }
 
 .sorting .button {
@@ -960,6 +964,7 @@ border-radius: 4px;
   color: #ffffff;
   background-color: #000000;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -977,6 +982,7 @@ border-radius: 4px;
 }
 
 .ellipsis {
+  padding: 16px 21px 17px;
   font-size: 22px;
   line-height: 26px;
   color: #000000;

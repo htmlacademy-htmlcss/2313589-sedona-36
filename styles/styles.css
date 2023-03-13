@@ -105,7 +105,10 @@ body {
   margin-left: auto;
   width: 191px;
   height: 104px;
+  padding-left: 58px;
+  padding-top: 54px; /* позиционирует кнопку по краю input */
   margin-right: 70px;
+  /*margin-bottom: 70px;*/
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -451,6 +454,7 @@ body {
 }
 
 .catalog-filter-group {
+  display: flex;
   width: 151px;
   height: 157px;
   list-style: none;
@@ -472,6 +476,9 @@ body {
 
 .catalog-filter-group {
   display: inline-block;
+  width: 150px;
+  padding: 0;
+  border: none;
 }
 
 .revers-images {
@@ -912,7 +919,7 @@ body {
 
 .background-image-catalog {
   background-color: #000000;
-  background-image: url(../images/header-inner.jpg);*/
+  background-image: url(../images/header-inner.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: -11px;
@@ -923,7 +930,7 @@ body {
   padding: 0;
   width: 495px;
   min-height: 78px;
-  padding-top: 75px;
+  padding-top: 35px;
   padding-left: 70px;
   margin-bottom: 8px;
   font-size: 60px;
@@ -935,11 +942,39 @@ body {
 .hotel-catalog {
   width: 1200px;
   margin: 0 auto;
-  padding: o;
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .hotel-catalog-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -954,7 +989,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 70px; /* 70px отступ дб, сформирую отступ после добавления иконок */
+  padding-left: 70px;
   margin-bottom: 32px;
 }
 
@@ -1037,6 +1072,223 @@ body {
 
 .control:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.control {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:active + .control-mark {
+  opacity: 0.3;
+  color: red;
+}
+
+.control-input:disabled + .control-mark,
+.control-input:disabled ~ .control {
+  opacity: 0.1;
+  cursor: default;
+}
+
+.control-mark:hover,
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1px;
+  margin: auto;
+  background-image: url("../images/hotel-catalog/check-bocks/tick-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.hotel-catalog-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+/* Ползунок */
+
+.position-range {
+  margin-left: 60px;
+  width: 288px;
+}
+
+.range-scale {
+  margin: 0;
+  padding: 0;
+  width: 288px;
+  position: relative;
+  height: 4px;
+  margin-bottom: 78px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px; /*2px*/
+  position:relative;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.range-input-before {
+  border-radius: 0 4px 4px 0;
+  border: none;
+}
+
+.range-input {
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-bottom: 36px;
+  width: 78px;
+  min-height: 48px;
+  font: "PT Sans", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  background: #F2F2F2;
+  appearance: textfield;
+}
+/* Убирает стрелки для изменения значений */
+
+.range-input-before::-webkit-inner-spin-button,
+.range-input-from::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.range-input:hover {
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.range-input:focus {
+  background-color: #E6E6E6;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.range-input:active,
+.range-input:not(:placeholder-shown) {
+  background-color: #E6E6E6;
+  border-color: #000000;
+  outline: none;
+}
+
+.range-input:not(:placeholder-shown):not(:focus) {
+  border: 3px solid #E6E6E6;
+}
+
+.catalog-filter-label span {
+  position: absolute;
+  content: "";
+  right: 20px;
+  top: 20%;
+  width: 17px;
+  height: 24px;
+  color: #000000;
+  opacity: 0.3;
 }
 
 /* search result */

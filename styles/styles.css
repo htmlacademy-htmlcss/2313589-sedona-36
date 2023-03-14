@@ -88,12 +88,48 @@ body {
   border-radius: 4px;
 }
 
+.navigation-link.button.button-small:hover {
+  background-color: #615048;
+}
+
+.navigation-link.button.button-small:focus {
+  background-color: #615048;
+}
+
+.navigation-link.button.button-small:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.navigation-link.button.button-small:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .button-mail {
   height: 52px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
+}
+
+.button-mail:hover {
+  background-color: #68A2CA;
+}
+
+.button-mail:focus {
+  background-color: #68A2CA;
+}
+
+.button-mail:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-mail:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* botton catalog.html */
@@ -297,6 +333,18 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 20px 16px;
+}
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current {
@@ -713,6 +761,24 @@ body {
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
+}
+
+.hotel-search:hover {
+  background-color: #615048;
+}
+
+.hotel-search:focus {
+  background-color: #615048;
+}
+
+.hotel-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.hotel-search:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* mailing */

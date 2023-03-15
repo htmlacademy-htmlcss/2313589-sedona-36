@@ -39,14 +39,23 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 1200px;
+  min-width: 1280px;
   min-height: 100%;
   font-family: "PT Sans", "sans-serif";
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   color: #333333;
 }
+
+.shadow {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
 
 .visually-hidden {
   position: absolute;

@@ -144,7 +144,6 @@ body {
   padding-left: 58px;
   padding-top: 54px; /* позиционирует кнопку по краю input */
   margin-right: 70px;
-  /*margin-bottom: 70px;*/
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -398,7 +397,6 @@ body {
   right: 0;
   bottom: 0;
   left: calc(50% - 11px/2 + 4px);
-  /*margin: auto;*/
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -410,7 +408,6 @@ body {
   background-color: #7DB54F;
   border-radius: 50%;
 }
-
 
 .page-header-logo {
   width: 140px;
@@ -1249,7 +1246,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -1309,6 +1305,7 @@ body {
   background: #F2F2F2;
   appearance: textfield;
 }
+
 /* Убирает стрелки для изменения значений */
 
 .range-input-before::-webkit-inner-spin-button,
@@ -1823,9 +1820,9 @@ body {
   margin-top: 25px;
 }
 
-/*.modal-close {
+.modal-close {
   display: none;
-}*/
+}
 
 .tooltip {
   position: relative;

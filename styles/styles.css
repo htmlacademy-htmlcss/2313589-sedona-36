@@ -1649,7 +1649,7 @@ body {
   text-transform: uppercase;
 }
 
-.modal-close {
+.modal-close-button {
   position: absolute;
   top: 64px;
   right: 52px;
@@ -1664,15 +1664,15 @@ body {
   cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-close-button:hover {
   background-color: #E6E6E6;
 }
 
-.modal-close:focus:not(:active) {
+.modal-close-button:focus:not(:active) {
   outline: 3px solid #83B3D3;
 }
 
-.modal-close:active {
+.modal-close-button:active {
   opacity: 0.3;
 }
 
@@ -1774,10 +1774,18 @@ body {
   outline: 3px solid #82B3D3;
 }
 
+/* Убирает стрелки для изменения значений для Chrome */
+
 .modal-form-input[type="number"]::-webkit-outer-spin-button,
 .modal-form-input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+/* Убирает стрелки для изменения значений для Firefox */
+
+.modal-form-input[type="number"] {
+  -moz-appearance:textfield;
 }
 
 .modal-form-input-wrap {

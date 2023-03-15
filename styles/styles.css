@@ -472,7 +472,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   width: 630px;
-  height: 72px;
+  min-height: 72px;
   margin: 0 auto;
   padding: 69px 0 25px;
 }
@@ -502,7 +502,7 @@ body {
 .catalog-filter-group {
   display: flex;
   width: 151px;
-  height: 157px;
+  min-height: 157px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -613,10 +613,6 @@ body {
   align-items: center;
 }
 
-.advantages-item-text {
-  align-items: center;
-} /* Не работает центровка на эти три элемента?!!*/
-
 /* services & hotel */
 
 .general-background {
@@ -669,9 +665,9 @@ body {
 
 .services-item {
   box-sizing: border-box;
-  min-width: 400px;
-  height: 385px;
-  padding: 183px 0 100px;
+  width: 400px;
+  min-height: 385px;
+  padding-top: 183px;
 }
 
 .white-fone {
@@ -726,6 +722,7 @@ body {
 .services-title {
   min-width: 230px;
   min-height: 28px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-size: 24px;
   line-height:28px;
@@ -749,7 +746,7 @@ body {
 
 .hotel-search {
   padding: 8px 50px;
-  min-width: 376px;
+  max-width: 376px;
   min-height: 36px;
   text-transform: uppercase;
   font-size: 20px;
@@ -993,7 +990,7 @@ body {
 .inner-header-title {
   margin: 0;
   padding: 0;
-  width: 495px;
+  min-width: 495px;
   min-height: 78px;
   padding-top: 35px;
   padding-left: 70px;
@@ -1048,7 +1045,7 @@ body {
 
 .breadcrumbs {
   width: 114px;
-  height: 21px;
+  min-height: 21px;
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -1088,6 +1085,7 @@ body {
 .breadcrumbs-item {
   position: relative;
   margin-right: 28px;
+  min-height: 12px;
 }
 
 .breadcrumbs-item::after {
@@ -1350,10 +1348,11 @@ body {
   content: "";
   right: 20px;
   top: 20%;
-  width: 17px;
+  width: 19px;
   height: 24px;
   color: #000000;
   opacity: 0.3;
+  overflow: hidden;
 }
 
 /* search result */
@@ -1366,7 +1365,7 @@ body {
   margin: 0;
   padding: 0;
   width: 338px;
-  height: 36px;
+  min-height: 36px;
   padding-top: 6px;
   padding-bottom: 6px;
   font-size: 30px;
@@ -1379,7 +1378,7 @@ body {
 .sorting {
   display: flex;
   min-width: 1060px;
-  height: 49px;
+  min-height: 49px;
   margin: 50px 70px 40px;
 }
 
@@ -1578,6 +1577,8 @@ body {
   line-height: 36px;
   color: #000000;
   background-color: #f2f2f2;
+  overflow: hidden;
+
 }
 
 .pagination-next {
@@ -1593,6 +1594,7 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .pagination-link:hover:not(.pagination-current) {

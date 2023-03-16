@@ -41,7 +41,7 @@ body {
   flex-direction: column;
   min-width: 1280px;
   min-height: 100%;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
@@ -74,7 +74,7 @@ body {
 .button {
   box-sizing: border-box;
   display: inline-block;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -336,7 +336,7 @@ body {
 .navigation-link {
   position: relative;
   display: block;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -388,17 +388,13 @@ body {
   margin: auto;
 }
 
-.navigation-link-search {
-  background-image: url("../images/navigation/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.navigation-link:hover svg
+.navigation-link:focus svg {
+  color: #756157;
 }
 
-.navigation-link-heart {
-  background-image: url("../images/navigation/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 20px;
+.navigation-link:active svg {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .text-link {
@@ -409,7 +405,7 @@ body {
   right: 0;
   bottom: 0;
   left: calc(50% - 11px/2 + 4px);
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -835,7 +831,7 @@ body {
   border: none;
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   padding: 14px 20px;
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
@@ -1327,7 +1323,7 @@ body {
   margin-bottom: 36px;
   width: 78px;
   min-height: 48px;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1735,7 +1731,7 @@ body {
 .modal-form-input {
   width: 370px;
   padding: 12px 50px 12px 20px;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1864,7 +1860,7 @@ body {
 }
 
 .modal-form-input::placeholder {
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;

@@ -1694,12 +1694,15 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-image: url("../images/check-bocks-icons/cross.svg");
   background-color: #F2F2F2;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+}
+
+.modal-cross {
+  fill: #000000;
 }
 
 .modal-close-button:hover {
@@ -1710,8 +1713,8 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.modal-close-button:active {
-  opacity: 0.3;
+.modal-close-button:active .modal-cross {
+ opacity: 0.3;
 }
 
 .modal-form {

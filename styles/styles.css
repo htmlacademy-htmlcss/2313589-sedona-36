@@ -1328,7 +1328,7 @@ body {
   margin-bottom: 36px;
   width: 78px;
   min-height: 48px;
-  font: "PT Sans", "sans-serif";
+  font-family: "PT Sans", "sans-serif";
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1336,6 +1336,7 @@ body {
   text-align: left;
   background: #F2F2F2;
   appearance: textfield;
+  outline: none;
 }
 
 /* Убирает стрелки для изменения значений */
@@ -1369,10 +1370,6 @@ body {
   background-color: #E6E6E6;
   border-color: #000000;
   outline: none;
-}
-
-.range-input:not(:placeholder-shown):not(:focus) {
-  border: 3px solid #E6E6E6;
 }
 
 .catalog-filter-label span {
@@ -1632,12 +1629,10 @@ body {
 
 .pagination-link:hover:not(.pagination-current) {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
 }
 
 .pagination-link:focus:not(.pagination-current) {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
 }
 
 .pagination-link:active:not(.pagination-current) {

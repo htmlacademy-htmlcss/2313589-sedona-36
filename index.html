@@ -204,37 +204,45 @@
           <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14"><path fill="#000" d="M14.393 1.292 13.1 0 7.394 5.708 1.685 0 .393 1.292 6.1 7 .393 12.708 1.685 14l5.708-5.708L13.1 14l1.292-1.292L8.685 7l5.708-5.708Z"/></svg>
         </button>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-form-label modal-form-full-width">Дата Заезда:
+          <label class="modal-form-label modal-form-full-width" for="arrival-date">Дата Заезда:
             <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля  2020">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля  2020" id="arrival-date" name="arrival-date">
               <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
             </div>
           </label>
-          <label class="modal-form-label modal-form-full-width">Дата Выезда:
+          <label class="modal-form-label modal-form-full-width" for="departure-date">Дата Выезда:
             <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября  2023">
+              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября  2023" id="departure-date" name="departure-date">
               <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
             </div>
           </label>
-          <label class="modal-form-label">Взрослые:
+          <label class="modal-form-label" for="number-adults">Взрослые:
             <div class="modal-form-input-wrap">
-              <button class="modal-form-control minus" type="button"></button>
-              <input type="number" class="modal-form-input" value="2">
-              <button class="modal-form-control plus" type="button"></button>
+              <button class="modal-form-control minus" type="button">
+                <span class="visually-hidden">Уменьшить число</span>
+              </button>
+              <input type="number" class="modal-form-input" value="2" id="number-adults" name="number-adults" placeholder="">
+              <button class="modal-form-control plus" type="button">
+                <span class="visually-hidden">Увеличить число</span>
+              </button>
             </div>
           </label>
-          <label class="modal-form-label">Дети:
+          <label class="modal-form-label" for="number-children">Дети:
             <div class="modal-form-label-tooltip">
               <div class="tooltip">
-                <button class="tooltip-control" type="button"></button>
-                <div class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст<br>
+                <button class="tooltip-control" type="button" aria-labelledby="tooltip-label-date"></button>
+                <div class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br> которые будут с вами, возраст<br>
                   которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</div>
               </div>
             </div>
             <div class="modal-form-input-wrap">
-              <button class="modal-form-control minus" type="button"></button>
-              <input type="number" class="modal-form-input" value="2">
-              <button class="modal-form-control plus" type="button"></button>
+              <button class="modal-form-control minus" type="button">
+                <span class="visually-hidden">Уменьшить число</span>
+              </button>
+              <input type="number" class="modal-form-input" value="2" id="number-children" name="number-children" placeholder="">
+              <button class="modal-form-control plus" type="button">
+                <span class="visually-hidden">Увеличить число</span>
+              </button>
             </div>
           </label>
           <button class="button button-modal" type="submit">Найти</button>

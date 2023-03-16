@@ -437,6 +437,7 @@ body {
 .hero {
   padding-top: 51px;
   background-image: url("../images/hero-over-background.jpg");
+  background-color: #82B3D3;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: -7px;
@@ -801,6 +802,7 @@ body {
 
 .mailing-background {
   background-image: url(../images/subscribe.jpg);
+  background-color: #82B3D3;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -1007,8 +1009,8 @@ body {
 /* catalog.html */
 
 .background-image-catalog {
-  background-color: #000000;
   background-image: url(../images/header-inner.jpg);
+  background-color: #756157;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: -11px;

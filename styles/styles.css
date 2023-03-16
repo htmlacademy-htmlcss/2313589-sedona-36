@@ -388,13 +388,13 @@ body {
   margin: auto;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -651,7 +651,7 @@ body {
 }
 
 .invite {
-  width:505px;
+  width: 505px;
   min-height: 72px;
   margin: 0 auto;
   padding: 0;
@@ -720,7 +720,7 @@ body {
 .services,
 .date-of-trip {
   font-size: 22px;
-  line-height:26px;
+  line-height: 26px;
 }
 
 .date-of-trip {
@@ -738,7 +738,7 @@ body {
   padding: 0 10px;
   text-transform: uppercase;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   font-weight: 700;
   color: #000000;
 }
@@ -747,7 +747,7 @@ body {
   min-width: 230px;
   min-height: 63px;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   font-weight: 400;
 }
 
@@ -763,7 +763,7 @@ body {
   min-height: 36px;
   text-transform: uppercase;
   font-size: 20px;
-  line-height:36px;
+  line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
@@ -1308,7 +1308,7 @@ body {
 .catalog-filter-label {
   display: flex;
   margin-right: 5px; /*2px*/
-  position:relative;
+  position: relative;
 }
 
 .range-input-from {
@@ -1823,7 +1823,7 @@ body {
 /* Убирает стрелки для изменения значений для Firefox */
 
 .modal-form-input[type="number"] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .modal-form-input-wrap {

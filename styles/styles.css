@@ -852,7 +852,7 @@ body {
 
 .field:active,
 .field:not(:placeholder-shown) {
-  outline: 3px solid #000;
+  outline: 3px solid #000000;
 }
 
 .field:not(:placeholder-shown):not(:focus) {
@@ -1677,7 +1677,6 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   color: #000000;
-  padding-top: -30px;
 }
 
 .modal-title {
@@ -1718,7 +1717,8 @@ body {
 .modal-form {
   display: grid;
   grid-template-columns: 247px auto;
-  gap: 31px 88px;
+  gap: 25px 88px;
+  grid-template-rows: 72px 73px 70px;
 }
 
 .modal-form-full-width {
@@ -1862,10 +1862,19 @@ body {
   align-self: center;
   margin-right: auto;
   margin-left: 10px;
+  margin-top: -42px;
 }
 
 .modal-form-submit {
   margin-top: 25px;
+}
+
+.modal-form-input::placeholder {
+  font-family: "PT Sans", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .modal-close {
@@ -1894,7 +1903,7 @@ body {
 
 .tooltip-text {
   position: absolute;
-  top: 41px;
+  top: 52px;
   left: 50%;
   min-width: 216px;
   transform: translateX(-50%);

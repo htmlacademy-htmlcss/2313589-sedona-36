@@ -388,13 +388,13 @@ body {
   margin: auto;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
+.navigation-link-search {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.navigation-link-heart {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
   background-position: center;

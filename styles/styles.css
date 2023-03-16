@@ -1690,7 +1690,7 @@ body {
 .modal-close-button {
   position: absolute;
   top: 64px;
-  right: 52px;
+  right: 50px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1718,7 +1718,7 @@ body {
   display: grid;
   grid-template-columns: 247px auto;
   gap: 25px 88px;
-  grid-template-rows: 72px 73px 70px;
+  grid-template-rows: 72px 73px 71px;
 }
 
 .modal-form-full-width {
@@ -1738,6 +1738,7 @@ body {
 .modal-form-input {
   width: 370px;
   padding: 12px 50px 12px 20px;
+  font-family: "PT Sans", "sans-serif";
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1849,7 +1850,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  margin-top: 4px;
+  margin-top: 3px;
   padding-left: 20px;
   color: #333333;
 }
@@ -1862,11 +1863,7 @@ body {
   align-self: center;
   margin-right: auto;
   margin-left: 10px;
-  margin-top: -42px;
-}
-
-.modal-form-submit {
-  margin-top: 25px;
+  margin-top: -25px;
 }
 
 .modal-form-input::placeholder {
@@ -1903,7 +1900,7 @@ body {
 
 .tooltip-text {
   position: absolute;
-  top: 52px;
+  top: 44px;
   left: 50%;
   min-width: 216px;
   transform: translateX(-50%);
@@ -1911,7 +1908,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   background-color: #333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

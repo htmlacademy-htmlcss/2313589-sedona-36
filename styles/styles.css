@@ -441,7 +441,7 @@ body {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   margin-top: -7px;
-  background-position: center bottom, center -1px;
+  background-position: center 430px, center 0;
 }
 
 .page-container {

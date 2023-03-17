@@ -154,7 +154,7 @@ body {
   width: 191px;
   height: 104px;
   padding-left: 58px;
-  padding-top: 54px; /* позиционирует кнопку по краю input */
+
   margin-right: 70px;
   text-align: center;
   font-size: 16px;
@@ -517,7 +517,7 @@ body {
 
 .catalog-filter-group {
   display: flex;
-  width: 151px;
+  width: 150px;
   min-height: 157px;
   list-style: none;
   margin: 0;
@@ -1033,6 +1033,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: -11px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -1040,8 +1041,6 @@ body {
   padding: 0;
   min-width: 495px;
   min-height: 78px;
-  padding-top: 35px;
-  padding-left: 70px;
   margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
@@ -1053,7 +1052,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 60px;
 }
 
 .catalog-filter {
@@ -1061,6 +1059,7 @@ body {
 }
 
 .catalog-filter-title {
+  padding: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1099,8 +1098,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 70px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .breadcrumbs-link {
@@ -1144,7 +1142,7 @@ body {
   background-position: center;
   width: 7px;
   height: 20px;
-  right: -16px;
+  right: -19px;
   top: -3px;
 }
 
@@ -1189,7 +1187,8 @@ body {
   position: relative;
   display: block;
   cursor: pointer;
-  padding-left: 36px;
+  padding-left: 35px;
+  padding-bottom: 3px;
 }
 
 .control-mark {
@@ -1259,6 +1258,7 @@ body {
 /* Ползунок */
 
 .position-range {
+  padding-top: 12px;
   margin-left: 60px;
   width: 288px;
 }
@@ -1269,7 +1269,7 @@ body {
   width: 288px;
   position: relative;
   height: 4px;
-  margin-bottom: 78px;
+  margin-bottom: ---------------------px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }

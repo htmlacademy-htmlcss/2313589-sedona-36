@@ -738,7 +738,7 @@ body {
   width: 592px;
   min-height: 52px;
   text-align: center;
-  margin-bottom: 62px;
+  margin-bottom: 55px;
 }
 
 .services-title {
@@ -820,7 +820,6 @@ body {
 }
 
 .mailing-title {
-  margin: 0;
   width: 444px;
   min-height: 37px;
   margin: 0 auto;
@@ -832,7 +831,7 @@ body {
 }
 
 .mailing-form {
-  min-width: 684px;
+  width: 680px;
   height: 52px;
   display: flex;
   border-radius: 4px;
@@ -841,7 +840,7 @@ body {
 }
 
 .field {
-  width: 452px;
+  width: 410px;
   border: none;
   font-size: 18px;
   line-height: 24px;
@@ -885,7 +884,7 @@ body {
   margin: 0 auto;
   width: 475px;
   min-height: 53px;
-  padding-bottom: 54px;
+  padding-bottom: 52px;
   text-transform: none;
   font-size: 22px;
   line-height: 26px;

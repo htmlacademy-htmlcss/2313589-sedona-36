@@ -150,16 +150,13 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
-  margin-left: auto;
   width: 191px;
   height: 104px;
-  padding-left: 58px;
-
-  margin-right: 70px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  padding-top: 55px;
 }
 
 .botton-catalog-blue {
@@ -517,12 +514,14 @@ body {
 
 .catalog-filter-group {
   display: flex;
+  flex-wrap: wrap;
   width: 150px;
   min-height: 157px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+  padding-right: 70px;
+  border: none;
 }
 
 .advantages-item-img {
@@ -535,13 +534,6 @@ body {
 
 .advantages-item-text {
   min-height: 385px;
-}
-
-.catalog-filter-group {
-  display: inline-block;
-  width: 150px;
-  padding: 0;
-  border: none;
 }
 
 .revers-images {
@@ -1049,6 +1041,7 @@ body {
 }
 
 .hotel-catalog {
+  display: flex;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -1056,6 +1049,8 @@ body {
 
 .catalog-filter {
   display: flex;
+  align-items: center;
+  padding-top: 25px;
 }
 
 .catalog-filter-title {
@@ -1063,7 +1058,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .catalog-filter-list {
@@ -1098,7 +1093,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs-link {
@@ -1258,8 +1253,9 @@ body {
 /* Ползунок */
 
 .position-range {
-  padding-top: 12px;
-  margin-left: 60px;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
   width: 288px;
 }
 
@@ -1269,7 +1265,6 @@ body {
   width: 288px;
   position: relative;
   height: 4px;
-  margin-bottom: ---------------------px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
@@ -1338,11 +1333,12 @@ body {
 }
 
 .range-input {
-  padding: 0;
+  margin-left: -3px;
+  margin-top: -3px;
   padding-left: 20px;
-  padding-right: 40px;
-  margin-bottom: 36px;
-  width: 78px;
+  padding-right: 55px;
+  margin-bottom: 41px;
+  width: 71px;
   min-height: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1392,7 +1388,7 @@ body {
   position: absolute;
   content: "";
   right: 20px;
-  top: 20%;
+  top: 15%;
   width: 19px;
   height: 24px;
   color: #000000;

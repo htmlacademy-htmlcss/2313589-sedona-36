@@ -329,8 +329,8 @@ body {
   align-items: center;
   justify-content: right;
   max-width: 360px;
-  margin-left: 0;
-  margin: 0;
+  margin-right: 70px;
+  gap: 10px;
 }
 
 .navigation-link {
@@ -372,20 +372,28 @@ body {
   background-color: #756257;
 }
 
-
 .navigation-user .navigation-link {
   min-width: 44px;
   min-height: 64px;
   padding: 0;
 }
 
-.navigation-icons {
+.navigation-icons-search {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.navigation-icons-heart {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: -19px;
+  margin: 0 auto;
 }
 
 .navigation-link:hover svg
@@ -401,10 +409,10 @@ body {
   position: absolute;
   width: 11px;
   height: 10px;
-  top: calc(50% - 10px/2 - 15px);
+  top: calc(50% - 10px/2 - 20px);
   right: 0;
   bottom: 0;
-  left: calc(50% - 11px/2 + 4px);
+  left: calc(50% - 11px/2 - 7px);
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -421,6 +429,7 @@ body {
   width: 140px;
   height: 71px;
   margin-left: 70px;
+  margin-right: 28px;
   position: relative;
   z-index: 1;
 }
@@ -491,11 +500,9 @@ body {
   line-height: 26px;
   background-color: #ffffff;
   color: #333333;
-  width: 651px;
+  width: 670px;
   height: 26px;
   margin: 0 auto;
-  padding-left: 274px;
-  padding-right: 274px;
   padding-bottom: 69px;
 }
 

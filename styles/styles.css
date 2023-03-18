@@ -1597,6 +1597,7 @@ margin-bottom: 9px;
 .pagination-container {
   display: flex;
   margin-left: 70px;
+  margin-bottom: 59px;
 }
 
 .pagination {

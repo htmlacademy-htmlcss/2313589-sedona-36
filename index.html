@@ -31,7 +31,8 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск.</span>
-                <svg class="navigation-icons-search" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                <svg class="navigation-icons-search" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                  viewBox="0 0 19 19">
                   <path
                     d="m18.893 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872 0-4.376-3.6-7.956-8-7.956s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"
                     fill="currentColor" />
@@ -42,7 +43,8 @@
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Лайк.</span>
                 <span class="text-link">12</span>
-                <svg class="navigation-icons-heart" xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                <svg class="navigation-icons-heart" xmlns="http://www.w3.org/2000/svg" width="19" height="17"
+                  viewBox="0 0 19 17">
                   <path
                     d="M9.293 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
                     fill="currentColor" />
@@ -201,74 +203,82 @@
             </a>
           </section>
         </div>
+      </footer>
     </div>
-    </footer>
     <!--Модальное окно-->
-    <div class="modal-container modal-close">
-      <div class="modal">
-        <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-        <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть окно.</span>
-          <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none"
-            viewBox="0 0 15 14">
-            <path fill="#000"
-              d="M14.393 1.292 13.1 0 7.394 5.708 1.685 0 .393 1.292 6.1 7 .393 12.708 1.685 14l5.708-5.708L13.1 14l1.292-1.292L8.685 7l5.708-5.708Z" />
-          </svg>
-        </button>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-form-label modal-form-full-width" for="arrival-date">Дата Заезда:
-            <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля  2020"
-                id="arrival-date" name="arrival-date">
-              <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
-            </div>
-          </label>
-          <label class="modal-form-label modal-form-full-width" for="departure-date">Дата Выезда:
-            <div class="modal-form-input-wrap date">
-              <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября  2023"
-                id="departure-date" name="departure-date">
-              <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
-          </label>
-          <label class="modal-form-label" for="number-adults">Взрослые:
-            <div class="modal-form-input-wrap">
-              <button class="modal-form-control minus" type="button">
-                <span class="visually-hidden">Уменьшить число</span>
+    <div class="modal-container /*modal-close" * />
+    <div class="modal">
+      <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть окно.</span>
+        <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none"
+          viewBox="0 0 15 14">
+          <path fill="#000"
+            d="M14.393 1.292 13.1 0 7.394 5.708 1.685 0 .393 1.292 6.1 7 .393 12.708 1.685 14l5.708-5.708L13.1 14l1.292-1.292L8.685 7l5.708-5.708Z" />
+        </svg>
+      </button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-form-label modal-form-full-width">
+          <label for="arrival-date">Дата Заезда:</label>
+          <div class="modal-form-input-wrap date">
+            <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля  2020"
+              id="arrival-date" name="arrival-date">
+            <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+        </div>
+        <div class="modal-form-label modal-form-full-width">
+          <label for="departure-date">Дата Выезда:</label>
+          <div class="modal-form-input-wrap date">
+            <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября  2023"
+              id="departure-date" name="departure-date">
+            <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+        </div>
+        <div class="modal-form-label">
+          <label for="number-adults">Взрослые:</label>
+          <div class="modal-form-input-wrap">
+            <button class="modal-form-control minus" type="button">
+              <span class="visually-hidden">Уменьшить число</span>
+            </button>
+            <input type="number" class="modal-form-input" value="2" id="number-adults" name="number-adults"
+              placeholder="">
+            <button class="modal-form-control plus" type="button">
+              <span class="visually-hidden">Увеличить число</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-form-label">
+          <label for="number-children">Дети:</label>
+          <div class="modal-form-label-tooltip">
+            <div class="tooltip">
+              <button class="tooltip-control" type="button" aria-labelledby="tooltip-label-date">
+                <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                  viewBox="0 0 26 26">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                  <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                </svg>
               </button>
-              <input type="number" class="modal-form-input" value="2" id="number-adults" name="number-adults"
-                placeholder="">
-              <button class="modal-form-control plus" type="button">
-                <span class="visually-hidden">Увеличить число</span>
-              </button>
-            </div>
-          </label>
-          <label class="modal-form-label" for="number-children">Дети:
-            <div class="modal-form-label-tooltip">
-              <div class="tooltip">
-                <button class="tooltip-control" type="button" aria-labelledby="tooltip-label-date">
-                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
-                </button>
-                <div class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br> которые
-                  будут с вами, возраст<br>
-                  которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</div>
+              <div class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,<br> которые
+                будут с вами, возраст<br>
+                которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
               </div>
             </div>
-            <div class="modal-form-input-wrap">
-              <button class="modal-form-control minus" type="button">
-                <span class="visually-hidden">Уменьшить число</span>
-              </button>
-              <input type="number" class="modal-form-input" value="2" id="number-children" name="number-children"
-                placeholder="">
-              <button class="modal-form-control plus" type="button">
-                <span class="visually-hidden">Увеличить число</span>
-              </button>
-            </div>
-          </label>
-          <button class="button button-modal" type="submit">Найти</button>
-        </form>
-      </div>
+          </div>
+          <div class="modal-form-input-wrap">
+            <button class="modal-form-control minus" type="button">
+              <span class="visually-hidden">Уменьшить число</span>
+            </button>
+            <input type="number" class="modal-form-input" value="2" id="number-children" name="number-children"
+              placeholder="">
+            <button class="modal-form-control plus" type="button">
+              <span class="visually-hidden">Увеличить число</span>
+            </button>
+          </div>
+        </div>
+        <button class="button button-modal" type="submit">Найти</button>
+      </form>
     </div>
-
+    </div>
   </body>
 
 </html>

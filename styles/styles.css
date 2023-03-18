@@ -525,6 +525,10 @@ body {
   border: none;
 }
 
+.catalog-filter-group:nth-child(n+3) {
+  padding-left: 70px;
+}
+
 .advantages-item-img {
   display: flex;
   align-items: center;
@@ -1253,12 +1257,6 @@ body {
 
 /* Ползунок */
 
-.position-range {
-  margin: 0;
-  padding: 0;
-  margin-left: 70px;
-  width: 288px;
-}
 
 .range-scale {
   margin: 0;

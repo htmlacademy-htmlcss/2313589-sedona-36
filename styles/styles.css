@@ -394,8 +394,8 @@ body {
   margin: 0 auto;
 }
 
-.navigation-link:hover svg
-.navigation-link:focus svg {
+.navigation-link:hover
+.navigation-link:focus {
   color: #756157;
 }
 

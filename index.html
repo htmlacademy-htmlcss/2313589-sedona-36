@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=dewice-width, initial-scale=1">
-    <title>Личный проект "Седона"</title>
+    <title>Личный проект "Седона".</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -142,7 +142,7 @@
             <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="mailing-form-adress">
                 <label class="visually-hidden" for="subscribe-email">Email.</label>
-                <input id="subscribe-email" class="field" placeholder="Ваш e-mail" type="email" name="mailing-adress">
+                <input id="subscribe-email" class="field" placeholder="Ваш e-mail" type="email" name="mailing-adress" required>
               </p>
               <button class="button button-mail" type="submit">
                 <span>Подписаться</span>
@@ -222,7 +222,7 @@
           <label for="arrival-date">Дата Заезда:</label>
           <div class="modal-form-input-wrap date">
             <input type="text" class="modal-form-input" placeholder="Укажите дату" value="27 апреля  2020"
-              id="arrival-date" name="arrival-date">
+              id="arrival-date" name="arrival-date" required>
             <span class="modal-form-caption error">Мы не можем отправить вас в прошлое.</span>
           </div>
         </div>
@@ -230,7 +230,7 @@
           <label for="departure-date">Дата Выезда:</label>
           <div class="modal-form-input-wrap date">
             <input type="text" class="modal-form-input" placeholder="Укажите дату" value="1 сентября  2023"
-              id="departure-date" name="departure-date">
+              id="departure-date" name="departure-date" required>
             <span class="modal-form-caption">На эти даты есть свободные номера. Пока есть.</span>
           </div>
         </div>
@@ -241,7 +241,7 @@
               <span class="visually-hidden">Уменьшить число</span>
             </button>
             <input type="number" class="modal-form-input" value="2" id="number-adults" name="number-adults"
-              placeholder="">
+              placeholder="" required>
             <button class="modal-form-control plus" type="button">
               <span class="visually-hidden">Увеличить число</span>
             </button>
@@ -269,7 +269,7 @@
               <span class="visually-hidden">Уменьшить число</span>
             </button>
             <input type="number" class="modal-form-input" value="2" id="number-children" name="number-children"
-              placeholder="">
+              placeholder="" required>
             <button class="modal-form-control plus" type="button">
               <span class="visually-hidden">Увеличить число</span>
             </button>

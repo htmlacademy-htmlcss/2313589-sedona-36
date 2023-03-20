@@ -1092,9 +1092,10 @@ body {
 }
 
 .breadcrumbs {
-  width: 114px;
+  width: 144px;
   min-height: 21px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -1811,7 +1812,7 @@ margin-bottom: 9px;
 
 .modal-form-control.minus {
   left: 10px;
-  background-image: url("../images/check-bocks-icons/Vector--.svg");
+  background-image: url("../images/check-bocks-icons/vector--.svg");
 }
 
 .modal-form-control.plus {
